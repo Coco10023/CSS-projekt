@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformulär</title>
+    <link rel = "stylesheet" href = "css/styles.css">
+</head>
+<body>
+    <header>
+        <a href = "index.html">
+            <img src = "bilder/logo.png" alt = "loga till min hemsida" width = "200" height = "120">
+        </a>
+        <nav>
+            <ul>
+                <li><a href = "index.html">Startsida</a></li>
+                <li><a href = "about.html">Om mig</a></li>
+                <li><a href = "contact.html">Kontaktuppifter</a></li>
+                <li><a href = "courses.html">Kurser</a></li>
+                <li><a href = "pictures.html">Bilder</a></li>
+            </ul>
+        </nav>
+        <h1>Kontakta mig via epost eller med nedanstående formulär</h1>
+    </header>
+    <main>
+        <section>
+        <h2>Kontaktformulär</h2>
+            <form>
+                <label for ="namn">Namn:</label>
+                <input type = "text" name = "namn" id ="namn" required>
+                <br>
+                <br>
+                <label for = "email">E-postadress:</label>
+                <input type = "email" name = "email" id = "email" required>
+                <br>
+                <br>
+
+                <label for = "yrke">Yrke:</label>
+                <select id = "yrke" name ="yrke">
+                    <option value = "Webbutvecklare">Webbutvecklare</option>
+                    <option value = "Webbdesigner">Webbdesigner</option>
+                    <option value = "Projektledare">Projektledare</option>
+                    <option value = "Nätverksspecialist">Nätverksspecialist</option>
+                    <option value = "Administratör">Administratör</option>
+                    <option value = "IT-tekniker">IT-tekniker</option>
+                    <option value = "Systemvetare">Systemvetare</option>
+                    <option value = "Datavetare">Datavetare</option>
+                </select>
+                
+                <p>Anställd:</p>
+                <div class = "radio-group">
+                  <label for = "Ja">
+                    <input type ="radio" id = "Ja" name="Anställd" value = "Ja"> Ja
+                  </label>
+
+                  <label for ="Nej">
+                    <input type = "radio" id = "Nej" name="Anställd" value = "Nej"> Nej
+                  </label>
+                </div>
+                <br>
+                <br>
+                
+                <label for = "Meddelande">Meddelande:</label>
+                <br>
+                <textarea id = "Meddelande" name = "Meddelande" rows = "10" cols = "30"></textarea>
+                <br>
+                <button type = "submit">Skicka</button>
+                <button type = "reset">Nollställ</button>
+
+
+
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Webbutveckling 1 - 2025-09-13 - Francisco De Leon
+            <a href = "mailto:frde2500@student.miun.se"> frde2500@student.miun.se</a>
+        </p>
+    </footer>
+</body>
+</html>
